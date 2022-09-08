@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+
+}
+p{
+    color: green;
+}
+ul{
+    color: black;
+    border: 1px solid red;
+    background-color: yellow;
+    width: 100px;
+}
