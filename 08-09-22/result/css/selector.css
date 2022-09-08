@@ -1,0 +1,11 @@
+.parent .parent-1 h1{
+    color: green;
+    text-align: center;
+}
+.parent h2{
+    color: red;
+    text-align: center;
+}
+.parent .parent-1 .p1-child-1 .child-1-para-1{
+    color:blue;
+}

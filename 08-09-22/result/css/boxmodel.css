@@ -1,0 +1,17 @@
+div{
+    width: 500px;
+    height: 500px;
+    border:10px solid red;  
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 30px;
+    padding-top: 50px;   
+}
+b{
+     border: 1px solid green;
+     margin-left: 50px;
+     padding-left: 30px;
+     padding-right: 30px;
+     padding-top: 40px;
+     padding-bottom: 40px;
+}
