@@ -1,0 +1,25 @@
+.parent{
+  background-color: aqua;
+}
+
+@media(min-width:575px) {
+    .parent {
+      background-color: red;
+    }
+  }
+  @media(min-width:767px) {
+    .parent {
+      background-color: green;
+    }
+  }
+  @media(min-width:991px) {
+    .parent {
+      background-color: rgb(20, 178, 231);
+    }
+  }
+  @media(min-width:1200px) {
+    .parent {
+      background-color: pink;
+    }
+  }
+  

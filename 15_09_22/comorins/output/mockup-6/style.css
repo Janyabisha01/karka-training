@@ -246,10 +246,11 @@ nav li:first-child{
     text-align: right;
 }
 .section3{
-    background-color: #000000;
+    background-color: #000000
 }
 .about{
     width: 38%;
+    display: inline-block;
 }
 .aboutvector h2{
     font-family: 'Roboto';
@@ -304,3 +305,90 @@ nav li:first-child{
 .aboutpara{
     margin-bottom: 36px;
 }
+.latest{
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin-left: 21px;
+}
+.latestimg{
+    display: inline-block;
+}
+.latestrectangle{
+    display: inline-block;
+    margin-left: 16px;
+}
+.latestrectangle:first-child{
+    margin-left: 0px;
+}
+.latestvectorimg{
+    width: 100%;
+}
+.latestvector h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 153.19%;
+    color: #B1B1B1;
+}
+.imgchild1{
+    margin-top: 26px;
+    margin-bottom: 50px;
+}
+.contact{
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+    margin-left: 56px;
+}
+.contactdetails h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 153.19%;
+    color: #B1B1B1;
+}
+.contactdetails img{
+    width: 100%;
+}
+.details p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 195.19%;
+    color: #FFFFFF;
+}
+.foot{
+    width: 100%;
+    margin-left: 49px;
+    padding-top: 63px;
+    padding-bottom: 57px;
+}
+.copyright{
+    background: #777777;
+    display: table;
+    width: 100%;
+    padding: 23px 0px;
+}
+.copyright h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 195.19%;
+    color: #D7E8B9;
+}
+.copy1{
+    display: table-cell;
+    padding-left: 41px;
+
+}
+.copy2{
+    display: table-cell;
+    text-align: right;
+    padding-right: 28px;
+}
+    
