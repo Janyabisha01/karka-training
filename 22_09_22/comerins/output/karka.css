@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    border-bottom: 2px solid black;
+}
+header li{
+    padding: 48px 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px; 
+    margin-left: 54px;
+}
+header li:first-child{
+    margin-left: 0px;
+}
+.image{
+    width: 218px;
+    height: 146px;
+}
+.container1{
+    background: #F3F2EE;
+    margin: 0;
+}
+.box{
+    margin-top: 72px;
+    padding: 0;
+}
+.card1{
+    background: #F3F2EE;
+    border: none;
+}
+.card1 h5{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+}
+.card1 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 153.19%;
+
+}
+.para{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;  
+}
+.img1{
+    border: 1px solid black;
+    padding: 10px;
+}

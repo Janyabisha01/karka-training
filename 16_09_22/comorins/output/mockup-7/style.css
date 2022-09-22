@@ -49,8 +49,9 @@ nav li:first-child{
     line-height: 24px;
     color: #FFFFFF;
     background: #EC483C;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
+    padding: 5px;
 }
 .backimg{
     width: 100%;
@@ -239,6 +240,14 @@ nav li:first-child{
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
+.demoul li:first-child{
+    margin-left: 0;
+}
+.demoul li:nth-child(2){
+    margin-left: 0;
 }
 .comimg{
     display: inline-block;
@@ -276,11 +285,12 @@ nav li:first-child{
     margin-top: 33px;
     margin-bottom: 12px;
 }
-.demoul input{
+.demo input{
     background: #EC483C;
     border-radius: 10px;
     color: #FFFFFF;
     border: 1px ;
+    padding: 10px;
 }
 .artimg img{
     margin-left: 14px;
@@ -324,6 +334,31 @@ nav li:first-child{
 }
 .demoul{
     column-count: 3;
-    -webkit-column-count: 3;
-    -moz-column-count:3 ;
+    list-style: none;
+    margin-bottom: 10px;
 }
+.enter{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 100px;
+}
+.entermail{
+    position: relative;
+}
+.subscribe{
+    background-color: red;
+    padding-bottom: 13px;
+    padding-right: 23px;
+    padding-top: 9px;
+    padding-left: 20px;
+    color: white;
+    border: 1px none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

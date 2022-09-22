@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+header{
+    background-color: black;
+    color: white;
+}
+nav{
+    background-color: rgb(184, 176, 176);
+}
+.content{
+    background-color: rgb(215, 208, 208);
+   padding: 100px;
+   border: 2px solid white;
+}
+.content1{
+    background-color: rgb(125, 121, 121);
+    border: 2px solid white;
+    padding: 100px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}

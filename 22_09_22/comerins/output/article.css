@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+.navcolor{
+    background-color: rgb(254, 128, 170) !important;
+   
+}
+.child{
+    background-color: white;
+    margin-right: 10px;
+    padding: 20px;
+}
+.content{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box{
+    padding: 0;
+}
+.box1{
+    background-color: rgb(254, 128, 170);
+}
+.box1 h3{
+    margin-top: 20px;
+}
+.list{
+    margin-left: 30px;
+}
+.list li{
+    margin-bottom: 20px;
+}
+.foot{
+    background-color: white;
+    padding: 20px;
+}

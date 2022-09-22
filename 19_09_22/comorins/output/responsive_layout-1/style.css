@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
 }
-/* @media(min-width:575px){
-    .karka{
+@media(min-width:575px){
+.karka{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -11,9 +11,6 @@
 }
 .karka h6{
     margin-top: 20px;
-}
-.title{
-    width: 70%;
 }
 nav{
     background-color: black;
@@ -33,7 +30,7 @@ section{
     background-color: rgb(192, 189, 189);
 }
 .title{
-    width: 58%;
+    width: 90%;
     display: inline-block;
     margin-left: 30px;
 }
@@ -62,12 +59,9 @@ section{
     padding: 15px;
 }
 .container1{
-    width: 33%;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 30px;
+    width: 90%;
     margin-left: 30px;
-    margin-right: 30px;
+
 }
 .about h2{
     margin-bottom: 12px;
@@ -78,9 +72,6 @@ section{
     background-color: white;
     padding: 15px;
 }
-.about:first-child{
-    margin-top: 0px;
-}
 .about p{
     margin-left: 15px;
 }
@@ -89,7 +80,7 @@ section{
 }
 .image1{
     background-color: rgb(132, 131, 131);
-    width: 87%;
+    width: 90%;
     padding: 10px 10px 75px;
     margin-left: 15px;
 }
@@ -106,7 +97,7 @@ footer{
     text-align: center;
     padding: 25px;
 }
-}*/
+}
 @media(min-width:767px){
     .karka{
         text-align: center;
@@ -130,6 +121,84 @@ footer{
         color: white;
         margin-left: 25px;
     }
+    section{
+
+        background-color: rgb(192, 189, 189);
+    }
+    .title{
+        width: 53%;
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .heading{
+        margin-left: 15px;
+    }
+    .para{
+        margin-left: 15px;
+    }
+    .heading h6{
+        margin: 10px 0px;
+    }
+    .image{
+        background-color: rgb(132, 131, 131);
+        width: 92%;
+        padding: 18px 10px 130px;
+       margin-left: 15px;
+    }
+    .paragraph{
+        margin: 15px 0px;
+    }
+    .container{
+        margin-bottom: 25px;
+        margin-top: 30px;
+        background-color: white;
+        padding: 15px;
+    }
+    .container1{
+        width: 34%;
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .about h2{
+        margin-bottom: 12px;
+        margin-left: 15px;
+    }
+    .about{
+        margin-top: 20px;
+        background-color: white;
+        padding: 15px;
+    }
+    .about:first-child{
+        margin-top: 0px;
+    }
+    .about p{
+        margin-left: 15px;
+    }
+    .para2{
+        margin-top: 15px;
+    }
+    .image1{
+        background-color: rgb(132, 131, 131);
+        width: 87%;
+        padding: 10px 10px 75px;
+        margin-left: 15px;
+    }
+    .image2{
+        background-color: rgb(132, 131, 131);
+        width: 92%;
+        margin-left: 15px;
+    }
+    .image2 h4{
+        padding: 21px;
+    }
+    footer{
+        background-color: rgb(117, 116, 116);
+        text-align: center;
+        padding: 25px;
+    }
     } 
 @media(min-width:1200px){
 .karka{
@@ -147,6 +216,7 @@ nav{
 }
 nav ul{
     margin-right: 25px;
+    text-align: left;
 }
 nav li{
     display: inline-block;
@@ -161,7 +231,7 @@ section{
     background-color: rgb(192, 189, 189);
 }
 .title{
-    width: 60%;
+    width: 59%;
     display: inline-block;
     margin-left: 30px;
 }
