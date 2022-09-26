@@ -5,8 +5,7 @@
 @media(min-width:575px){
 .karka{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 10px;
     background-color: white;
 }
 .karka h6{
@@ -25,7 +24,7 @@ nav li{
     color: white;
     margin-left: 25px;
 }
-section{
+body{
 
     background-color: rgb(192, 189, 189);
 }
@@ -96,13 +95,13 @@ footer{
     background-color: rgb(117, 116, 116);
     text-align: center;
     padding: 25px;
+    margin-top: 20px;
 }
 }
 @media(min-width:767px){
     .karka{
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding: 10px;
         background-color: white;
     }
     .karka h6{
@@ -121,7 +120,7 @@ footer{
         color: white;
         margin-left: 25px;
     }
-    section{
+    body{
 
         background-color: rgb(192, 189, 189);
     }
@@ -198,13 +197,13 @@ footer{
         background-color: rgb(117, 116, 116);
         text-align: center;
         padding: 25px;
+        margin-top: 20px;
     }
     } 
 @media(min-width:1200px){
 .karka{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 10px;
     background-color: white;
 }
 .karka h6{
@@ -226,7 +225,7 @@ nav li{
 nav ul li:last-child{
     float: right;
 }
-section{
+body{
 
     background-color: rgb(192, 189, 189);
 }
@@ -303,6 +302,7 @@ footer{
     background-color: rgb(117, 116, 116);
     text-align: center;
     padding: 25px;
+    margin-top: 20px;
 }
 }
 

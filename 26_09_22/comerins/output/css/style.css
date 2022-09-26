@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contactbtn{
+    /* navbutton */
+    background-color:#036370;
+    border-radius: 60px;
+    margin-right: 100px;
+    color: white;
+    padding: 12px 21px 12px 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+}
+nav{
+    border-radius: 40px 40px 0px 0px;
+}
+nav ul{
+    margin-left: 100px;
+}
+.navigation{
+    /* ulandformdiv */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navlist{
+    /* navigationlist */
+    padding: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #04162F;
+}
+.section1{
+    margin-top: 200px;
+    margin-bottom: 130px;
+}
+.content{  
+    /* section1 row div */
+    margin: 0;
+}
+.leftside h3{
+    /* section1 leftside h3 */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: -0.5px;
+    color: #04162F;
+}
+.leftside p{
+    /* section1 leftside p */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.53);
+    margin-top: 30px;
+}
+.buttons{
+    /* section1 button div */
+    margin-top: 73px;
+}
+.started{
+    /* section1 getstarted button */
+    border-radius: 60px;
+    margin-right: 21px;
+    padding: 17px 37px 16px 39px;
+}
+.whyusbtn{
+    border: 2px dashed rgba(0, 0, 0, 0.33);
+    border-radius: 60px;
+    padding: 18px 52px 15px 53px;
+    background: none;
+}
+.bannerimg{
+    /* section1 rightside */
+    width: 100%;
+}
+.section2 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #04162F;
+    margin-bottom: 20px;
+}
+.section2 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.61);
+}
+.buttonwrap{
+    margin-top: 40px;
+}
+.tickbutn{
+    border-radius: 110px;
+    padding: 20px 23px;
+}
+.tickbutn p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #04162F;
+}
+.tickimg{
+    margin-right: 22px;
+}
+.subsection{
+    margin-top: 61px;
+    margin-bottom: 48px;
+}
+.subsection h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #21C1D7;
+    margin-bottom: 23px;
+}
+.subsection button{
+    border-radius: 60px;
+    padding: 18px 35px 15px 40px;
+}
+.kidsec{
+    margin-bottom: 150px;
+}
+.section3 h3{
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #010101;
+}
+.section4 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: rgba(0, 0, 0, 0.69);
+}
+.subsec4{
+    margin-bottom: 51px;
+}
+.section4{
+    margin-bottom: 200px;
+}
+.textsec{
+    margin-left: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px; 
+    margin-top: 40px;
+}
+.calender{
+    float: left;
+    margin-top: 9px;
+}
+.texttwelve{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #10C700;
+}
+.exptext{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.bottext{
+    margin: 0;
+    margin-left: 60px;
+}
+.textkids{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #4583DA;
+    margin-bottom: 41px;
+}
+.parakids{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #818181;
+}
+.aboutbtn{
+    border-radius: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    margin-right: 27px;
+    padding: 15px 50px 18px 49px;
+}
+.para2kids{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+}
+.call{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: red !important;
+}
+.phnnumber{
+    margin-top: 75px;
+}
+.section5{
+    margin-bottom: 200px;
+}
+.teachers{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0.01em;
+    color: #04162F;
+    margin-bottom: 67px;
+}
+.teacherimg{
+    width: 100%;
+}
+.teachingimg h4{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+.teachingimg p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #868686;
+}
+.section6{
+    margin-top: 120px;
+}
+.section6 h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 14px;
+}
+.calltext{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #656565;
+}
+.contact{
+    margin-top: 40px;
+}
+.callingimg{
+    float: left;
+}
+.locationtext{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #676767 !important;
+}
+.locationpara{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000; 
+}

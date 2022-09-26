@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bannertext{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 110px;
+    letter-spacing: 0.2px;
+    color: #1E1F4B;
+}
+.navigation{
+    margin-top: 30px;
+}
+.secimg{
+    width: 100%;
+    margin-top: 115px
+}
+.navlist{
+    margin-top: 34px;
+}
+.navbtn{
+    margin-top: 34px;
+}
+.cont{
+    margin-top: 100px;
+}
+.cardimg{
+    background: #F4F4FD;
+    border-radius: 32px;
+    width: 116px;
+    height: 127px;
+}
+.logosec{
+    text-align: center;
+    margin-top: 74px;
+    margin-bottom: 140px;
+}

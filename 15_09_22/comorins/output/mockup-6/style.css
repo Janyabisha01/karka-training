@@ -338,9 +338,9 @@ nav li:first-child{
 }
 .contact{
     display: inline-block;
-    width: 22%;
+    width: 23%;
     vertical-align: top;
-    margin-left: 56px;
+    margin-left: 50px;
 }
 .contactdetails h2{
     font-family: 'Roboto';
