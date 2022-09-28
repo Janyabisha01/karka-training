@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1"/>
+    <input type="number" id="num2"/>
+    <button onclick="add()">Add</button>
+    <script>
+        // onclick function
+        function add(){
+            let a=document.getElementById("num1").value;
+            let b=document.getElementById("num2").value;
+            let c=Number(a)+Number(b);
+            alert(c);
+        }
+      
+
+        let resume={name:"Abisha",
+                    Hobbies:["listening to music","dancing","walking"],
+                    education:
+                            [{qualification:"BE",
+                             institute:"UCEN",
+                             department:"CSE",
+                             mark_p:80,
+                             completion_year:"2022"
+                            },
+                            {qualification:"12th",
+                             institute:"convent",
+                             mark_p:75,
+                             completion_year:"2018"
+                            },
+                            {qualification:"10th",
+                             institute:"convent",
+                             mark_p:95,
+                             completion_year:"2015"
+                            }],
+                    personal_details:
+                            {conatact:"123445",
+                             email:"abc@123",
+                             dob:"01.10.2000",
+                             gender:"female",
+                             family_details:{fathersname:"Jayaraj",
+                             mothers_name:"Mangalam",
+                             siblings:"1",
+                             fasthers_occupation:"fisherman",
+                             mothers_occupation:"house wife"},
+                             languages_known:["tamil,english"]
+                            },
+                    skils:["html","css","bootstrap"],
+                    experience:"fresher",
+                    area_of_interest:["Object oriented programming"],
+                };
+
+                // access to the intitute object 
+        for(i=0;i<resume.education.length;i++){
+            console.log(i);
+            console.log(resume.education[i].institute);
+        }
+
+        // calculating the total of mark_p
+        let total=0;
+        let percentage;
+        for(i=0;i<resume.education.length;i++){
+            percentage=resume.education[i].mark_p;
+            total=total+percentage;
+        }
+        console.log(total/resume.education.length);       
+    </script>   
+</body>
+</html>
