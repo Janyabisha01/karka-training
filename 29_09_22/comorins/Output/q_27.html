@@ -8,17 +8,16 @@
 </head>
 <body>
     <script>
-        function pluralize(number,noun){
-            if(number>1){
-                console.log(+number+ "" +noun+ "s");
-            }else{
-                console.log(+number+ "" +noun);
-            }
-            
+        function checkInRange(range){
+           if(range>=0 && range<=20) 
+           {
+            console.log("Between the range");
+           }else{
+            console.log("Outside the range")
+           }
         }
-         pluralize(5,"cat");
-         pluralize(1,"dog");
-    
+        checkInRange(10);
+        checkInRange(25);
     </script>
 </body>
 </html>

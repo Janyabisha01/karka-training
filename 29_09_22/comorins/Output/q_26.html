@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findTriangleType(side1,side2,side3){
+            if(side1==side2 && side1==side3 && side2==side3)
+            {
+                console.log("Equilateral Triangle");
+            }
+            else if(side1==side2 || side2==side3){
+                console.log("Isosceles Triangle");
+            }else{
+                console.log("Scalene Triangle");
+            }
+        }
+        findTriangleType(3,3,3);
+        findTriangleType(3,5,5);
+        findTriangleType(1,2,3);
+    </script>
+</body>
+</html>
