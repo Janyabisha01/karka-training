@@ -29,13 +29,19 @@
          function display(){
             let element="";
             let local_list=JSON.parse(localStorage.getItem("todo"));
-            for(let i=0;i<list.length;i++)
+            for(let i=0;i<local_list.length;i++)
             {
-                element=element+"<li>"+local_list[i]+"</li>"
+                element=element+"<li>"+local_list[i]+"</li>"+"<button onclick='removeItems()'>"+"Delete"+"</button>"
             }
             document.getElementById("todolist").innerHTML=element;
          }
-        //  display();
+         display();
+         function removeItems(position){
+            let list_new=JSON.parse(localStorage.getItem("todo"));
+            let deletedItem=list_new.splice(index,1);
+            console.log(deletedItem); 
+
+         }
 
     </script>
 </body>
