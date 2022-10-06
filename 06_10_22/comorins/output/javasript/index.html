@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Name:
+            <input type="text" id="name" onkeyup="addDetails('name',this.value)" style="display:block"/>
+        Email:    
+            <input type="text" id="email" onkeyup="addDetails('email',this.value)" style="display:block"/>
+        Phone:
+            <input type="number" id="number" onkeyup="addDetails('number',this.value)" style="display:block"/>
+        Role:
+            <input type="text" id="role" onkeyup="addDetails('role',this.value)" style="display:block"/>
+        Objective:
+            <input type="text" id="obhective" onkeyup="addDetails('objective',this.value)" style="display:block"/> 
+        Skills:
+        <input type="text" id="skills" onkeyup="addDetails('skills',this.value,0)" style="display:block"/>
+        <input type="text" id="skills" onkeyup="addDetails('skills',this.value,1)" style="display:block"/>
+        <input type="text" id="skills" onkeyup="addDetails('skills',this.value,2)" style="display:block"/> 
+        <table>
+            <thead>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Institute</th>
+                <th>Percentage</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,0,'course')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,0,'year')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,0,'institute')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,0,'percentage')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,1,'course')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,1,'year')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,1,'institute')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,1,'percentage')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,2,'course')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,2,'year')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,2,'institute')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,2,'percentage')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,3,'course')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,3,'year')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,3,'institute')"/></td>
+                    <td><input type="text" id="education" onkeyup="addDetails('education',this.value,3,'percentage')"/></td>
+                </tr>  
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th>Course name</th>
+                <th>Institute</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,0,'course_name')"/></td>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,0,'institute')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,1,'course_name')"/></td>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,1,'institute')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,2,'course_name')"/></td>
+                    <td><input type="text" id="certification" onkeyup="addDetails('certification',this.value,2,'institute')"/></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Abstract</th>
+                <th>Technologies used</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,0,'title')"/></td>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,0,'abstract')"/></td>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,0,'technologies_used')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,1,'title')"/></td>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,1,'abstract')"/></td>
+                    <td><input type="text" id="projects" onkeyup="addDetails('projects',this.value,1,'technologies_used')"/></td>
+                </tr>
+            </tbody>
+        </table>
+        Fathers's name:
+        <input type="text" id="details" onkeyup="addDetails('details',this.value,0,'fathers_name')" style="display:block" />
+        Date Of Birth:
+        <input type="date" id="details" onkeyup="addDetails('details',this.value,1,'dob')" style="display:block"/>
+        Address:
+        <input type="text" id="details" onkeyup="addDetails('details',this.value,2,'address')" style="display:block"/> 
+        Gender:
+        <input type="text" id="details" onkeyup="addDetails('details',this.value,3,'gender')" style="display:block"/>
+        Marrital status
+        <input type="text" id="details" onkeyup="addDetails('details',this.value,4,'marrital_status')" style="display:block"/>
+        <button onclick="display()">Submit</button>
+        <code id="obj_data"></code>
+    </div>
+    <script>
+        let resume={skills:[],education:[],certification:[],projects:[],details:[]};
+        function addDetails(key,value,index,indexkey){
+            // alert(value);
+            if(index==null && indexkey==null)
+            {
+                resume[key]=value;
+            }else if(indexkey==null){
+                resume[key][index]=value;
+            }
+            else {
+                if(!resume[key][index]){
+                    resume[key][index]={};
+                }
+                resume[key][index][indexkey]=value;  
+            }
+            // display();
+        }
+        function display(){
+
+            document.getElementById("obj_data").innerHTML=JSON.stringify(resume);
+        }
+        // let resume={
+        //     name:"Abisha",
+        //     email:"abisha2019j@gmail.com",
+        //     phone:"6383062936",
+        //     role:"frontend developer",
+        //     objective:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan, nisi quis vestibulum mollis, est orci vehicula mi, sed lobortis risus neque in ex. Duis laoreet elementum auctor. ",
+        //     education_qualification:[{
+        //         degree:"B.E",
+        //         institute:"UCEN",
+        //         marks_in_percentage:"80",
+        //         stream:"computer science and engineering",
+        //         year_of_passout:"2022"
+        //     },{
+        //         degree:"12th",
+        //         institute:"convent",
+        //         marks_in_percentage:"75",
+        //         stream:"maths biology",
+        //         year_of_passout:"2018"
+        //     },{
+        //         degree:"10th",
+        //         institute:"convent",
+        //         marks_in_percentage:"96",
+        //         stream:"",
+        //         year_of_passout:"2016"
+        //     }],
+        //     skills:["html","css","javascript"],
+        //     certification:[{
+        //         course_name:"assessment on html",
+        //         institute:"lumos learning"
+        //     },{
+        //         course_name:"national employbility test",
+        //         institute:"wheebox"
+        //     },{
+        //         course_name:"online basic UI/UX course",
+        //         institute:"great learning"
+        //     }],
+        //     projects:[{
+        //         title:"AJ's aquarium",
+        //         abstract:"to create a website on aquarium where everyone are able to get the varieties of fishes in online",
+        //         technologies_used:"html,css,python"
+        //     },{
+        //         title:"detecting hospitals bed availabilty in the ambulance",
+        //         abstract:"Detecting the availability of bed in the specialized hospitals in the ambulance iteslf",
+        //         technologies_used:"machine learning"
+        //     }],
+        //     personal_details:{
+        //         fathers_name:"jayaraj",
+        //         DOB:"01.10.2000",
+        //         address:"59/17,st.james appartment,r.c.bharathar street,vadasery",
+        //         gender:"female",
+        //         marrital_status:"single"
+        //     } 
+        // }
+       
+    </script>
+</body>
+</html>

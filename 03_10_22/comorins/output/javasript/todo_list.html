@@ -19,11 +19,11 @@
         let list=JSON.parse(localStorage.getItem("todo"));
         
          function additems(){
+            
             let item=document.getElementById("items").value;
             list.push(item);
             localStorage.setItem("todo",JSON.stringify(list));
-             display();
-             console.log(list)
+            display();
          }
         
          function display(){
@@ -36,11 +36,13 @@
             document.getElementById("todolist").innerHTML=element;
          }
          display();
+        
          function removeItems(position){
             let list_new=JSON.parse(localStorage.getItem("todo"));
-            let deletedItem=list_new.splice(index,1);
-            console.log(deletedItem); 
-
+           list.splice(position,1);
+            console.log(list); 
+            localStorage.setItem("todo",JSON.stringify(list));
+            display();
          }
 
     </script>
