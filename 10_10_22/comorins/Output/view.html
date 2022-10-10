@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label id="id">Name :</label>
+    <label id="title">Title :</label>
+    <label id="state">State :</label>
+    <label id="district">District :</label>
+    <label id="country">Country :</label>
+    <label id="category">Category :</label>
+    <label id="news_type">News_type :</label>
+    <label id="content">Content:</label>
+    <label id="author">Author :</label>
+    <label id="date">Date :</label>
+    <script>
+        let news_details=JSON.parse(localStorage.getItem("news"));
+        let url_string=window.location.search;
+        let urlParams = new URLSearchParams(url_string);
+        let url = urlParams.get('id')
+        
+        for(i=0;i<news_details.length;i++)
+        {
+            if(url==news_details[i].id)
+            {
+                document.getElementById('id').innerHTML=news_details[i].id;
+                document.getElementById('title').innerHTML=news_details[i].title;
+                document.getElementById('state').innerHTML=news_details[i].state;
+                document.getElementById('district').innerHTML=news_details[i].district;
+                document.getElementById('country').innerHTML=news_details[i].country;
+                document.getElementById('news_type').innerHTML=news_details[i].news_type;
+                document.getElementById('category').innerHTML=news_details[i].category;
+                document.getElementById('content').innerHTML=news_details[i].content;
+                document.getElementById('author').innerHTML=news_details[i].author;
+                document.getElementById('date').innerHTML=news_details[i].date;
+            }
+        }
+    </script>
+</body>
+</html>

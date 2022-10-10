@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+</head>
+<body>
+    <div class="form">
+        Id:
+        <input type="number" id="id" onkeyup="add('id',this.value)">
+        Title:
+        <input type="text" id="title" onkeyup="add('title',this.value)">
+        State:
+        <input type="text" id="state" onkeyup="add('state',this.value)">
+        District:
+        <input type="text" id="district" onkeyup="add('district',this.value)">
+        Country:
+        <input type="text" id="country" onkeyup="add('country',this.value)">
+        News_type:
+        <input type="text" id="news_type" onkeyup="add('news_type',this.value,0)">
+        <input type="text" id="news_type" onkeyup="add('news_type',this.value,1)">
+        Category:
+        <input type="text" id="category" onkeyup="add('category',this.value,0)">
+        <input type="text" id="category" onkeyup="add('category',this.value,1)">
+        <input type="text" id="category" onkeyup="add('category',this.value)">
+        Content:
+        <textarea id="content" onkeyup="add('content',this.value)"></textarea>
+        Author:
+        <input type="text" id="author" onkeyup="add('author',this.value)">
+        Date:
+        <input type="text" id="date" onkeyup="add('date',this.value)">
+    </div>
+    <button onclick="display()">Submit</button>
+    <div>
+        <code id="datas"></code>
+        <ol id="newslist"></ol>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

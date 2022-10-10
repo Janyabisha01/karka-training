@@ -10,44 +10,44 @@
 </head>
 <body>
     <div class="container">
-        <label>Name :</label><br>
-        <label>Email :</label><br>
-        <label>Mobile_no :</label><br>
-        <label>Skills :</label><br>
+        <label id="name">Name :</label><br>
+        <label id="email">Email :</label><br>
+        <label id="phone">Phone :</label><br>
+        <label id="skills">Skills :</label><br>
         <h3>Education</h3>
         <table class="table table-striped">
             <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Qualification</th>
-                <th scope="col">Year</th>
+                <th scope="col" >Year</th>
                 <th scope="col">Institute</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="course"></td>
+                <td id="year"></td>
+                <td id="institute"></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="course"></td>
+                <td id="year"></td>
+                <td id="institute"></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="course"></td>
+                <td id="year"></td>
+                <td id="institute"></td>
               </tr>
               <tr>
                 <th scope="row">4</th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="course"></td>
+                <td id="year"></td>
+                <td id="institute"></td>
               </tr>
             </tbody>
           </table>
@@ -57,34 +57,19 @@
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">course</th>
-                  <th scope="col">Duration</th>
                   <th scope="col">Institute</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="course"></td>
+                  <td id="institute"></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="course"></td>
+                  <td id="institute"></td>
                 </tr>
               </tbody>
             </table>
@@ -94,96 +79,87 @@
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Title</th>
-                  <th scope="col">Duration</th>
                   <th scope="col">Abstract</th>
+                  <th scope="col">Technologies_used</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="title"></td>
+                  <td id="abstract"></td>
+                  <td id="technologied_used"></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <h3>Certification</h3>
-          <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Company</th>
-                  <th scope="col">Role</th>
-                  <th scope="col">Year of Working</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td id="title"></td>
+                  <td id="abstract"></td>
+                  <td id="technologied_used"></td>
                 </tr>
               </tbody>
             </table>
             <h3>Personal Details</h3>
-        <label>Gender:</label>
+        <label id="gender">Gender:</label>
         <br>
-        <label>DOB :</label>
+        <label id="DOB">DOB :</label>
         <br>
-        <label>Age :</label>
+        <label id="marrital_status">Marrital Status:</label>
         <br>
-        <label>Marrital Status:</label>
+        <label id="fathers_name">Father's Name :</label>
         <br>
-        <label>Father's Name :</label>
-        <br>
-        <label>Mother's Name</label>
-        <br>
-        <label>address</label>
-        <br>
-        <label>Nationality</label>
+        <label id="address">address</label>
         </div>
     <script>
+        let resume_details=JSON.parse(localStorage.getItem("data"));
         const queryString = window.location.search;
         const urlParams=new URLSearchParams(queryString);   
         const product = urlParams.get('name');
-        // alert(product);
+        for(let i=0;i<resume_details.length;i++){
+    if(product==resume_details[i].name){
+      document.getElementById("name").innerHTML=resume_details[i].name;
+      document.getElementById("email").innerHTML=resume_details[i].email;
+      document.getElementById("phone").innerHTML=resume_details[i].phone;
+      document.getElementById("role").innerHTML=resume_details[i].role;
+      document.getElementById("objective").innerHTML=resume_details[i].objective;
+                                 // education
+      let edu=resume_details[i].education;
+      console.log(edu)
+      for(let i=0;i<edu.length;i++){
+           document.getElementById("course"+i).innerHTML=edu[i].course;
+          document.getElementById("instutite"+i).innerHTML=edu[i].instutite;
+          document.getElementById("year"+i+"").innerHTML=edu[i].year;
+          document.getElementById("percentage"+i).innerHTML=edu[i].percentage;
+      }
+                      // Experience
+      let exp=resume_details[i].experience
+      console.log(experience[i])
+      for(let i=0;i<experience.length;i++){
+        document.getElementById("course"+i).innerHTML=exp[i].course;
+        document.getElementById("institute"+i).innerHTML=exp[i].institute;
+      }
+                                // skills  
+        document.getElementById("skills").innerHTML=resume_details[i].skill;
+                         // projects
+      let projects=resume_details_details[i].project;
+      for(let i=0;i<projects.length;i++){
+        document.getElementById("title"+i).innerHTML=projects[i].title;
+        document.getElementById("abstract"+i).innerHTML=projects[i].abstract;
+        document.getElementById("technologies_used"+i).innerHTML=projects[i].technologies_used;
+      }
+                    // personal_details
+      document.getElementById("fathersname").innerHTML=resume_details[i].details.fathername;
+      document.getElementById("DOB").innerHTML=resume_details[i].details.DOB;
+      document.getElementById("address").innerHTML=resume_details[i].details.address;
+      document.getElementById("gender").innerHTML=resume_details[i].details.gender;
+      document.getElementById("marrital_status").innerHTML=resume_details[i].details.marrital_status;
+      document.getElementById("language").innerHTML=resume_details[i].language;
+      // decclaration
+      // document.getElementById("declaration").innerHTML=resume_details[i].declaration;
+      // document.getElementById("sign").innerHTML=resume_details[i].name;
+
+    }
+  }
+        
     </script>
 </body>
 </html>
