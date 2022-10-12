@@ -10,7 +10,7 @@ function add(key,value,index=null){
     }else{
         news[key]=value;
     }
-    console.log(news)
+//     console.log(news)
 }
 function display(){
     document.getElementById("datas").innerHTML=JSON.stringify(news);
@@ -23,12 +23,17 @@ function display(){
     localStorage.setItem('news',JSON.stringify(newscontent));
     newsdisplay()
 }
+
 function newsdisplay(){
     let element=""
-    let newsindex=JSON.parse(localStorage.getItem("news"))
+    let newsindex=JSON.parse(localStorage.getItem('news'))
+    console.log(newsindex)
     for(let i=0;i<newsindex.length;i++){
         element=element+"<li> <a href='view.html?id="+newsindex[i].id +"'target='_blank'>"+newsindex[i].id+"</a></li>"
     }
-    document.getElementById("newslist").innerHTML=element
+    document.getElementById("newslist").innerHTML=element;
 }
 newsdisplay()
+
+
+
