@@ -2,12 +2,19 @@
     padding: 0;
     margin: 0;
 }
+.navigation{
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+nav a{
+    float: left;
+}
 header img{
     width: 100%;
 }
-nav  a .toiimg{
-    width: 100% !important; 
-}
-section {
+.homerow img{
+    width: 100%;
     margin-top: 20px;
 }
