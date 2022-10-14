@@ -8,13 +8,67 @@
     z-index: 100;
     overflow: hidden;
 }
+.navdiv{
+    justify-content: center;
+}
 nav a{
     float: left;
 }
 header img{
     width: 100%;
 }
+.homelink{
+    text-decoration: none !important;
+}
 .homerow img{
     width: 100%;
+}
+.homerow .col-4{
+    margin-top: 30px;
+}
+.col-4:last-child{
+    margin-bottom: 30px;
+}
+.newstitle{
+    color: black;
     margin-top: 20px;
+}
+.newspara{
+    color: black;
+    margin-bottom: 0 !important;
+}
+.newstitle:hover{
+    color:blue;
+}
+.head{
+    background-color: red;
+   
+}
+.cardimg{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.head h1{
+    color: white;
+}
+.cardhead{
+    border: none !important;
+}
+.newsimg{
+    width: 50% !important;
+    margin: 0 !important;
+}
+.newscontent{
+    text-align: justify;
+}
+.bookimg{
+    width: 50%;
+}
+.bookmarktxt{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
